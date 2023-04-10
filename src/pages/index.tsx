@@ -20,15 +20,9 @@ const IndexPage: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>SQL Chat - Chat-based SQL client for the next decade</title>
+        <title>SQL Chat</title>
         <link rel="icon" href="/chat-logo-bot.webp" />
-        <meta name="description" content="Chat-based SQL client for the next decade" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="og:title" property="og:title" content="SQL Chat" />
-        <meta name="og:description" property="og:description" content="Chat-based SQL client for the next decade" />
-        <meta name="og:image" property="og:image" content="https://www.sqlchat.ai/chat-logo-and-text.webp" />
-        <meta name="og:type" property="og:type" content="website" />
-        <meta name="og:url" property="og:url" content="https://www.sqlchat.ai" />
+        <meta name="description" content="" />
       </Head>
 
       <h1 className="sr-only">SQL Chat</h1>
@@ -39,7 +33,6 @@ const IndexPage: NextPage = () => {
         <QueryDrawer />
       </main>
 
-      <Script defer data-domain="sqlchat.ai" src="https://plausible.io/js/script.js" />
     </div>
   );
 };
