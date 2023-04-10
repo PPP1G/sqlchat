@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import Icon from "./Icon";
-import WeChatQRCodeView from "./WeChatQRCodeView";
 import ClearDataButton from "./ClearDataButton";
 import LocaleSelector from "./LocaleSelector";
 import OpenAIApiConfigView from "./OpenAIApiConfigView";
@@ -22,18 +21,6 @@ const SettingModal = (props: Props) => {
           <Icon.IoMdClose className="w-5 h-auto" />
         </button>
         <div className="w-full flex flex-col justify-start items-start space-y-3 pt-4">
-          <div className="w-full flex flex-row justify-start items-start flex-wrap">
-            <a
-              href="https://discord.gg/z6kakemDjm"
-              className="w-auto px-4 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium flex flex-row justify-center items-center mr-2 mb-2 hover:underline hover:shadow"
-              target="_blank"
-            >
-              <Icon.BsDiscord className="w-4 h-auto mr-1" />
-              {t("social.join-discord-channel")}
-            </a>
-            <WeChatQRCodeView />
-          </div>
-
           <h3 className="pl-4 text-sm text-gray-500">{t("setting.basic.self")}</h3>
           <div className="w-full border border-gray-200 p-4 rounded-lg">
             <div className="w-full flex flex-row justify-between items-center gap-2">
